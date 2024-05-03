@@ -38,7 +38,7 @@ class InsuranceChargePredictorApp:
         smoker = int(self.smoker_entry.get())
 
 
-        data = pd.read_csv("https://raw.githubusercontent.com/Ktokkerz01/SoftwareTechCapstoneProject/main/Dataset11.csv")  # Example dataset
+        data = pd.read_csv("https://raw.githubusercontent.com/Ktokkerz01/SoftwareTechCapstoneProject/main/Dataset11.csv") 
         X = data[['age', 'bmi', 'children', 'smoker']]
         y = data['charges']
         model = LinearRegression()
